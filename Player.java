@@ -15,6 +15,12 @@ public class Player {
         }
     }
     
+    public void newDice() {
+        for (int i = 0; i < dice.length; i++) {
+            dice[i] = randDie();
+        }
+    }
+    
     public static int randDie() {
         int rand = (int) ((Math.random() * 6) + 1);
         return rand;

@@ -21,9 +21,22 @@ public class LiarsDice {
         System.out.println("If you think your oponent is lying, then you can call. If you are correct, you win.");
         System.out.println("To bet, type 'bet', then type the amount of dice, then the type of dice you think are on the board");
         System.out.println("If you think your oponent is a liar, then just type 'call'.");
+        System.out.println("");
+        System.out.println("You roll your dice,");
+        System.out.println("");
+        System.out.println("Your dice read "+ player.dice[0] +", "+ player.dice[1] +", "+ player.dice[2] +", "+ player.dice[3] +", and "+ player.dice[4]);
         boolean end = false;
         while (!end) {
-            
+            String commandInput = kb.nextLine();
+            if (commandInput.equals("bet")) {
+                
+            }
+            else if (commandInput.equals("call")) {
+                
+            }
+            else {
+                System.out.println("That is not a valid function.");
+            }
         }
     }
 }
